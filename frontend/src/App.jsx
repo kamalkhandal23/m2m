@@ -1,29 +1,37 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/layout/Navbar/Navbar";
-import HeroSection from "./features/home/HeroSection";
-import TravelPricingSection from "./features/home/TravelPricingSection";
-import WhyChooseSection from "./features/home/WhyChooseSection";
-import ExploreSection from "./features/home/ExploreSection";
-import MilestonesSection from "./features/home/MilestonesSection";
-import VoyageSection from "./features/home/VoyageSection";
-import AboutSection from "./features/home/AboutSection";
-import ReadyToDiveSection from "./features/home/ReadyToDiveSection";
-import TestimonialSection from "./features/home/TestimonialSection";
 import Footer from "./components/layout/Footer";
+
+import Home from "./pages/Home";
+// import Schedule from "./pages/Schedule";
+// import About from "./pages/About";
+// import Fleet from "./pages/Fleet";
+// import Explore from "./pages/Explore";
+// import FAQ from "./pages/FAQ";
+// import Contact from "./pages/Contact";
+
 function App() {
   return (
-    <div>
+    <BrowserRouter>
+
       <Navbar />
-      <HeroSection />
-      <TravelPricingSection />
-      <WhyChooseSection />
-      <ExploreSection />
-      <MilestonesSection /> 
-      <VoyageSection />
-      <AboutSection />
-      <ReadyToDiveSection />
-      <TestimonialSection />
+
+      <Routes>
+
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/schedule" element={<Schedule />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/fleet" element={<Fleet />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} /> */}
+
+      </Routes>
+
       <Footer />
-    </div>
+
+    </BrowserRouter>
   );
 }
 
