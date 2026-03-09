@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* ===== Design Tokens ===== */
+:root {
+  --color-primary: #0B3C5D;
+  --color-secondary: #1B6983;
+  --color-accent: #F4C430;
+  --color-bg-light: #F5F7FA;
+  --color-white: #FFFFFF;
+}
+
+/* ===== Custom Utilities ===== */
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+}
