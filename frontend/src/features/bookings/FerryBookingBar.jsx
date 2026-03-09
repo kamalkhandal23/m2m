@@ -6,11 +6,12 @@ import {
     Car,
     Bike,
     Bus,
+    Megaphone,
 } from "lucide-react";
 
 export default function FerryBookingBar() {
     return (
-        <div className="absolute left-1/2 -translate-x-1/2 top-[110px] z-30 w-full max-w-[1200px] px-4">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[110px] z-30 w-full max-w-[1200px] px-4 mt-20">
 
             {/* Tabs */}
             <div className="flex gap-2 mb-3">
@@ -123,6 +124,22 @@ export default function FerryBookingBar() {
                 <button className="bg-[#0c3f57] text-white px-16 py-8 font-semibold text-sm rounded-r-[24px] flex items-center justify-center">
                     SEARCH
                 </button>
+
+                <div className="absolute right-[40px] top-[170px]">
+
+                    <div className="relative inline-block">
+
+                        <div className="absolute -top-2 -left-2 bg-white rounded-full p-1 shadow z-10">
+                            <Megaphone size={16} className="text-pink-500" />
+                        </div>
+
+                        <button className="border border-white text-white px-6 py-2 rounded-lg bg-white/10 backdrop-blur">
+                            ANNOUNCEMENTS
+                        </button>
+
+                    </div>
+
+                </div>
 
             </div>
 
