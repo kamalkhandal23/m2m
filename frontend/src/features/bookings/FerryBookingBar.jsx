@@ -148,22 +148,17 @@ export default function FerryBookingBar() {
             </div>
 
             {/* Announcements */}
-            <div className="absolute right-10 top-[185px]">
+            <div className="absolute right-6 top-[170px]">
 
                 <div className="relative inline-block">
 
                     <div className="absolute -top-2 -left-2 bg-white rounded-full p-1 shadow z-10">
-
                         <Megaphone size={16} className="text-pink-500" />
-
                     </div>
 
                     <button className="border border-white text-white px-6 py-2 rounded-lg bg-white/10 backdrop-blur">
-
                         ANNOUNCEMENTS
-
                     </button>
-
                 </div>
 
             </div>
